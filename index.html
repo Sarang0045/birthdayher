@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6ed">
+  <meta name="description" content="A little birthday surprise, made with love.">
+  <title>A little birthday magic ✿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true">✿</div>
+  <div class="ambient ambient-two" aria-hidden="true">♡</div>
+
+  <main>
+    <section class="screen home-screen active" id="home" aria-labelledby="birthday-title">
+      <div class="topline"><span class="tiny-flower">✿</span> A little surprise, made just for you <span class="tiny-flower">✿</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+        <h1 id="birthday-title">Happy Birthday,<br><em>my favorite person.</em></h1>
+        <p class="intro">I made you a tiny world of wishes. Come make one with me?</p>
+      </div>
+
+      <div class="cake-stage" id="cake-stage">
+        <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div><div class="sparkle sparkle-c">✦</div>
+        <div class="cake-note">one wish, coming up <span>♡</span></div>
+        <div class="cake" id="birthday-cake" aria-label="A strawberry birthday cake with one candle">
+          <div class="candle"><div class="flame" id="flame"><i></i></div><div class="wick"></div><div class="candle-body"><span>♡</span></div></div>
+          <div class="cake-top"><i class="berry berry-one"></i><i class="berry berry-two"></i><i class="berry berry-three"></i><i class="cream cream-one"></i><i class="cream cream-two"></i><i class="cream cream-three"></i></div>
+          <div class="cake-side"><span class="icing-drip drip-one"></span><span class="icing-drip drip-two"></span><span class="icing-drip drip-three"></span><span class="icing-drip drip-four"></span><div class="cake-decoration">✿　♡　✿　♡　✿</div></div>
+          <div class="cake-bottom"></div>
+        </div>
+        <div class="cake-plate"></div>
+        <div class="table-shadow"></div>
+        <div class="mini-flower flower-left">🌼</div><div class="mini-flower flower-right">🌷</div>
+      </div>
+
+      <div class="interaction-card" id="blow-card">
+        <div class="card-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 14c5-5 10-5 14 0m-18 6c7-7 15-7 22 0M4 26c8-7 17-7 24 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 12c4-3 8-2 11 1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <div><strong>Make a wish, birthday girl</strong><p>Drag the little breeze over your candle.</p></div>
+        <button class="breeze" id="breeze" aria-label="Drag the breeze to the candle"><svg viewBox="0 0 50 34" aria-hidden="true"><path d="M4 10h25c9 0 9-9 2-9-3 0-5 2-5 4M2 17h39c8 0 8 10 1 10-3 0-5-2-5-4M9 24h15"/></svg><small>drag me</small></button>
+      </div>
+      <p class="hint" id="home-hint">Psst… you can also tap the breeze ✨</p>
+      <div class="celebration" id="celebration" aria-live="polite">Wish sent to the universe! ✨</div>
+      <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+      <div class="progress-pill" id="progress-pill"><span class="progress-dot current"></span><span class="progress-dot"></span><span class="progress-dot"></span><span class="progress-dot"></span></div>
+    </section>
+
+    <section class="screen cake-screen" id="cutting" aria-labelledby="cut-title">
+      <button class="back-link" data-go="home">← back to your wish</button>
+      <p class="eyebrow">A LITTLE SOMETHING SWEET</p>
+      <h2 id="cut-title">Now let’s share<br><em>the first slice.</em></h2>
+      <p class="section-intro">Drag the tiny knife across the cake to cut you the biggest piece ♡</p>
+      <div class="slice-stage" id="slice-stage">
+        <div class="slice-sparkle">✧</div>
+        <div class="top-cake-plate"><div class="top-cake" id="slice-cake" aria-label="A round strawberry cake, seen from above">
+          <div class="cake-rim"></div><div class="cake-frosting"></div>
+          <div class="cake-topping topping-a">✿</div><div class="cake-topping topping-b">♡</div><div class="cake-topping topping-c">✿</div><div class="cake-topping topping-d">♡</div><div class="cake-topping topping-e">✿</div>
+          <div class="cake-berry berry-a"></div><div class="cake-berry berry-b"></div><div class="cake-berry berry-c"></div><div class="cake-berry berry-d"></div><div class="cake-berry berry-e"></div>
+          <div class="cake-sprinkle sprinkle-a"></div><div class="cake-sprinkle sprinkle-b"></div><div class="cake-sprinkle sprinkle-c"></div><div class="cake-sprinkle sprinkle-d"></div><div class="cake-sprinkle sprinkle-e"></div>
+          <div class="slice-wedge" id="slice-wedge"><i></i></div>
+        </div></div>
+        <div class="knife" id="knife" role="button" tabindex="0" aria-label="Drag the cute knife across the cake"><svg viewBox="0 0 92 36" aria-hidden="true"><path d="M6 18 49 5c7-2 12 0 15 5L20 23c-6 2-11 0-14-5Z" fill="#f8e7da" stroke="#bc877e" stroke-width="1.6"/><path d="m10 21 13 9c4 3 9 2 11-2l2-4-18-8Z" fill="#cf8088" stroke="#ad656f" stroke-width="1.5"/><path d="m11 21 4 3" stroke="#f9dad1" stroke-width="1.6" stroke-linecap="round"/><circle cx="25" cy="24" r="1.5" fill="#ffe7da"/></svg><small>drag to cut</small></div>
+        <div class="cut-line" id="cut-line"></div>
+      </div>
+      <p class="hint" id="cut-hint">A little swipe across the cake does the trick.</p>
+      <div class="couple-scene" id="couple-scene" aria-live="polite">
+        <div class="couple-sparkle">✦　♡　✧</div>
+        <div class="character boy"><div class="hair-back"></div><div class="head"><div class="fringe"></div><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="blush blush-left"></span><span class="blush blush-right"></span><span class="mouth"></span></div><div class="neck"></div><div class="body-shirt">♡</div><div class="arm arm-left"><i class="hand"></i></div><div class="leg leg-left"></div><div class="leg leg-right"></div></div>
+        <div class="cake-slice-bite"><i class="slice-berry"></i><i class="slice-cream"></i></div>
+        <div class="character girl"><div class="hair-back"></div><div class="hair-bow">✿</div><div class="head"><div class="fringe"></div><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="blush blush-left"></span><span class="blush blush-right"></span><span class="mouth"></span></div><div class="neck"></div><div class="body-shirt">✿</div><div class="arm arm-left"><i class="hand"></i></div><div class="leg leg-left"></div><div class="leg leg-right"></div></div>
+        <div class="heart-pop">♥</div>
+        <p class="couple-caption" id="couple-caption">He saved the sweetest bite for you ♡</p>
+        <button class="pill-button feed-button" id="feed-button">Let her have a bite <span>♡</span></button>
+        <button class="text-button next-to-letter" id="letter-button">Open your little letter <span>→</span></button>
+      </div>
+      <div class="progress-pill"><span class="progress-dot done"></span><span class="progress-dot current"></span><span class="progress-dot"></span><span class="progress-dot"></span></div>
+    </section>
+
+    <section class="screen letter-screen" id="letter" aria-labelledby="letter-title">
+      <button class="back-link" data-go="cutting">← back to our cake</button>
+      <div class="letter-wrap">
+        <div class="wax-seal">♡</div>
+        <div class="letter-paper">
+          <div class="letter-date">A little note for your birthday · with love</div>
+          <h2 id="letter-title">To my <em>favorite girl,</em></h2>
+          <div class="letter-copy">
+            <p>Happy Birthday, my baby! ❤️</p>
+            <p>Today is such a special day for you, and I just want to tell you how beautiful and cute you are. You are such an amazing person, and honestly, there is nobody in this world like you. Sometimes, even when you get angry, you still look so cute. 🥹❤️</p>
+            <p>You are so strong, and I feel incredibly lucky to have you in my life. I love how much you care about everyone around you. Even when you get tired yourself, you never hesitate to help others. Your beautiful smile, your playful side, your little angry moments, and the way you sometimes become a little kid — I love every single thing about you.</p>
+            <p>I love you so much, baby. Thank you for everything, for coming into my life, and for making it so much more beautiful just by being in it.</p>
+            <p>I really want to marry you someday and spend the rest of my life making you happy. ❤️</p>
+            <p class="signature"><span>I LOVE YOU SO MUCH! ❤️🧿</span></p>
+          </div>
+          <div class="letter-flower flower-stamp">✿</div><div class="letter-flower flower-stamp-two">✿</div>
+        </div>
+      </div>
+      <form class="wish-form" id="wish-form">
+        <label for="wish-input">Before our memories, make one little wish</label>
+        <p>When she saves it, a Gmail draft to Sarang opens. She can tap Send there.</p>
+        <textarea id="wish-input" name="wish" maxlength="160" rows="2" placeholder="I wish for…" required></textarea>
+        <div class="wish-form-bottom"><span id="wish-count">0 / 160</span><button class="pill-button memories-button" id="memories-button" type="submit">Email my wish & open memory lane <span>✧</span></button></div>
+      </form>
+      <div class="progress-pill"><span class="progress-dot done"></span><span class="progress-dot done"></span><span class="progress-dot current"></span><span class="progress-dot"></span></div>
+    </section>
+
+    <section class="screen memories-screen" id="memories" aria-labelledby="memories-title">
+      <button class="back-link" data-go="letter">← back to your letter</button>
+      <p class="eyebrow">LITTLE MOMENTS, BIG LOVE</p>
+      <h2 id="memories-title">Our very own<br><em>memory lane.</em></h2>
+      <p class="section-intro memory-intro">Add your favorite photos, then tap any picture to see it up close.</p>
+      <div class="wish-keepsake" id="wish-keepsake" hidden><span>HER BIRTHDAY WISH</span><blockquote id="wish-display"></blockquote><p class="wish-email-status" id="wish-email-status"></p><a class="wish-email-link" id="wish-email-link" target="_blank" rel="noopener noreferrer" hidden>Open Gmail draft</a><i>✧</i></div>
+      <div class="photo-toolbar">
+        <label class="upload-button" for="photo-upload">＋ Add photos <span>choose up to 26 from your device</span></label>
+        <input id="photo-upload" type="file" accept="image/*" multiple hidden>
+        <p class="photo-status" id="photo-status" aria-live="polite">26 photos are ready. Tap a picture to see it large.</p>
+      </div>
+      <div class="string-wrap"><div class="string"></div><div class="photo-line" id="photo-line" aria-label="26 little photo frames for your favorite memories"></div></div>
+      <button class="pill-button again-button" id="again-button">Make another birthday wish <span>✦</span></button>
+      <div class="progress-pill"><span class="progress-dot done"></span><span class="progress-dot done"></span><span class="progress-dot done"></span><span class="progress-dot current"></span></div>
+    </section>
+  </main>
+  <dialog class="photo-dialog" id="photo-dialog" aria-label="Photo preview">
+    <button class="photo-dialog-close" id="photo-dialog-close" aria-label="Close photo">×</button>
+    <img id="photo-dialog-image" alt="Expanded memory photo">
+    <div class="photo-dialog-actions">
+      <label class="replace-photo-button" for="photo-replace-input">Replace this photo</label>
+      <input id="photo-replace-input" type="file" accept="image/*" hidden>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
